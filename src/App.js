@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 
 import {Pagination, Table, SortPanel} from './components';
 
+import star from './img//star.png';
+
 import 'bootstrap/dist/css/bootstrap.css';
 import './styles.scss';
 
@@ -35,6 +37,7 @@ export const App = () => {
                 genre={genre}
                 setGenre={setGenre}/>
             <Table
+                star={star}
                 moviesData={moviesData}
                 loadedImages={loadedImages}
                 setLoadedImages={setLoadedImages}/>

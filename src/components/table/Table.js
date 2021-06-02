@@ -3,7 +3,7 @@ import React from 'react';
 import './styles.scss';
 
 export const Table = (props) => {
-    const {moviesData, loadedImages, setLoadedImages} = props;
+    const {moviesData, loadedImages, setLoadedImages, star} = props;
 
     return (
         <div className='table'>
@@ -20,7 +20,7 @@ export const Table = (props) => {
                                 <p className='title'>{elem.title}</p>
                                 <p className='year'>{elem.year}</p>
                                 <div className='rating'>
-                                    <img src='/src/img/star.png'/>
+                                    <img src={star}/>
                                     <p>{elem.rating}</p>
                                 </div>
                                 <div className='synopsis'>

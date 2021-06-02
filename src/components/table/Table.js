@@ -19,6 +19,10 @@ export const Table = (props) => {
                                      src={elem.small_cover_image} alt=""/>
                                 <p className='title'>{elem.title}</p>
                                 <p className='year'>{elem.year}</p>
+                                <div className='rating'>
+                                    <img src='/src/img/star.png'/>
+                                    <p>{elem.rating}</p>
+                                </div>
                                 <div className='synopsis'>
                                     <p>{elem.synopsis}</p>
                                 </div>

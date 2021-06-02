@@ -1,0 +1,27 @@
+.pagination {
+  width: 300px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    outline: none!important;
+    height: 45px;
+    width: 40px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 10px;
+    background: #ea0042;
+    border: 0;
+    color: #FFFFFF;
+  }
+  .standart:hover {
+    background: #cc003a;
+  }
+}
+
+button.active {
+  background: #820025;
+}

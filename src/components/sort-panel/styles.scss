@@ -1,0 +1,39 @@
+.sortPanel {
+  border-radius: 0 0 20px 20px;
+  background: #1f1b2e;
+  height: 90px;
+  width: 400px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  select {
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    background: #312b45;
+    height: 40px;
+    width: 160px;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: 0.3s;
+  }
+
+  select:hover {
+    background: #433b5e;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sortPanel {
+    width: 250px;
+    height: 140px;
+    padding-top: 20px;
+    display: block;
+    select {
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+  }
+}

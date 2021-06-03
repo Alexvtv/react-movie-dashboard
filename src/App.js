@@ -24,7 +24,7 @@ export const App = () => {
                 const response = await fetch(`https://yts.mx/api/v2/list_movies.json?page=${page}&limit=20&genre=${genre}&sort_by=${sortParam}`);
                 const json = await response.json();
                 setMoviesData(json.data);
-                console.log(json.data);
+                setCommentValue('');
             } catch (error) {
                 console.error('Ошибка:', error);
             }

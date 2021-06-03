@@ -3,7 +3,7 @@ import React from 'react';
 import './styles.scss';
 
 export const Table = (props) => {
-    const {moviesData, loadedImages, setLoadedImages, star} = props;
+    const {moviesData, loadedImages, setLoadedImages, star, setCurrentMovie} = props;
 
     return (
         <div className='table'>
@@ -11,7 +11,7 @@ export const Table = (props) => {
                 moviesData
                     ? moviesData.movies.map((elem, index) => {
                         return (
-                            <div key={index} className='movie'>
+                            <div key={index} onClick={() => setCurrentMovie(elem.id)} className='movie'>
                                 <img style={{display: loadedImages.some(e => e === index) ? 'block' : 'none'}}
                                      src={elem.medium_cover_image}
                                      onLoad={() => setLoadedImages([...loadedImages, index])} alt=""/>

@@ -1,0 +1,1 @@
+export {WindMovie} from './WindMovie';
